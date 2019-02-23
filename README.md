@@ -64,3 +64,9 @@
   - Global Variables
   - *dictionary.py*
   - *Hangman*
+- **7. Testing and debugging**
+  - Programming Challenges
+  - Classes of Tests
+  - Bugs
+  - Debugging
+  - Debugging Examples
