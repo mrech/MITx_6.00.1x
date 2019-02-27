@@ -70,3 +70,8 @@
   - Bugs
   - Debugging
   - Debugging Examples
+- **8. Assertions and Exceptions**
+  - Assertions
+  - Exceptions
+    - *Exceptions.py*
+  - Exception Examples
