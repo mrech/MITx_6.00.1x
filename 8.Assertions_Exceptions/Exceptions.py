@@ -10,3 +10,13 @@ except ZeroDivisionError:
     print("Can't divide by zero")
 except:
     print('Something went very wrong.')
+
+# While Exception
+while True:
+    try:
+        n = input('Please enter an integer: ')
+        n = int(n)
+        break
+    except ValueError:
+        print('Input not an integer; try again.')
+print('Correct input of an integer!')
