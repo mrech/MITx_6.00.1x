@@ -77,3 +77,9 @@
   - Exception Examples
     - *IO_Exceptions.py*
     - *recursive_finally.py*
+    - ***wordgame***
+      - *coding.py*
+      - *ps4a.py*
+      - *ps4b.py*
+      - words.txt
+      - test_ps4a.py
