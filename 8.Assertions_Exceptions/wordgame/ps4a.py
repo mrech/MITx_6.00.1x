@@ -312,21 +312,21 @@ def playGame(wordList):
     2) When done playing the hand, repeat from step 1    
     """
     # Initialize hand
-    hand = False
     while True:
 
         usrInput = input(
         '\nEnter n to deal a new hand, r to replay the last hand, or e to end game: ')
 
-        if usrInput == 'r' and not hand:
-            print('You have not played a hand yet. Please play a new hand first!')
+        if usrInput == 'r':
+            try:
+                playHand(hand, wordList, HAND_SIZE)
+            except UnboundLocalError:
+                print('You have not played a hand yet. Please play a new hand first!')
         elif usrInput == 'n':
             hand = dealHand(HAND_SIZE)
             playHand(hand, wordList, HAND_SIZE)
-        elif usrInput == 'r' and hand:
-            playHand(hand, wordList, HAND_SIZE)
         elif usrInput == 'e':
-            return None
+            break
         else:
             print('Invalid command.')
 #
