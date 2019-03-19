@@ -84,21 +84,12 @@ class Hand(object):
         returns: Boolean (if the word was or was not made)
         """
         # Your code here
-        BooRet = True
-        updateHand = self.hand.copy()
-        self.word = word
-        for i in self.word:
-            if i in updateHand.keys():
-                BooRet = True
-                updateHand[i] = updateHand.get(i, 0) - 1
-            else:
-                BooRet = False
-                break
-        if BooRet == True:
-            #  update hand using dict comprehension and list comprehension
-            updateHand = {k: v for k, v in updateHand.items() if v > 0}
-            self.hand = updateHand
-        return BooRet
+        for i in set(word):
+            if self.hand.get(i, 0) < word.count(i):
+                return False
+        for i in set(word):
+            self.hand[i] -= word.count(i)
+        return True
 
 
 myHand = Hand(7)
@@ -109,5 +100,5 @@ myHand.setDummyHand('aazzmsp')
 print(myHand)
 print(myHand.calculateLen())
 
-myHand.update('gev')
+myHand.update('rux')
 print(myHand)
