@@ -97,3 +97,5 @@
   - Adding another Class
   - Using Inherited Methods
     - *hand.py*
+  - generators
+    - *generator.py*
