@@ -83,3 +83,17 @@
       - *ps4b.py*
       - words.txt
       - test_ps4a.py
+- **9. Classes and Inheritance**
+  - Object Oriented Programming
+  - Class Instances
+    - *classes_inheritance.py*
+  - Methods
+  - Hierarchies
+    - *hierarchy.py*
+  - Class Variables
+- **10. An Extended Example**
+  - Building a Class
+  - Visualizing the Hierarchy
+  - Adding another Class
+  - Using Inherited Methods
+    - *hand.py*
