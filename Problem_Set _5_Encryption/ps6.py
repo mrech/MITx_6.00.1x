@@ -132,7 +132,8 @@ class Message(object):
         self.message_text_encrypted = []
 
         for i in range(len(self.message_text)):
-            self.message_text_encrypted.append(self.encrypting_dict[self.message_text[i]])
+            self.message_text_encrypted.append(
+                self.encrypting_dict[self.message_text[i]])
 
         # convert to a string
         self.message_text_encrypted = ''.join(self.message_text_encrypted)
@@ -230,7 +231,14 @@ class CiphertextMessage(Message):
         Returns: a tuple of the best shift value used to decrypt the message
         and the decrypted message text using that shift value
         '''
-        pass  # delete this line and replace with your code here
+
+        # Our encryption method only has 26 distinct possible values for the shift
+        for s in range(26):
+            self.message_text_dencrypted = self.apply_shift(26-s)
+            if is_word(self.valid_words, self.message_text_dencrypted):
+                bestShift = 26 - s
+                text_dencrypted = self.message_text_dencrypted.lower()
+        return (bestShift, text_dencrypted)
 
 
 # Example test case (PlaintextMessage)
