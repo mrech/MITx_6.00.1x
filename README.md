@@ -77,12 +77,12 @@
   - Exception Examples
     - *IO_Exceptions.py*
     - *recursive_finally.py*
-    - ***wordgame***
-      - *coding.py*
-      - *ps4a.py*
-      - *ps4b.py*
-      - words.txt
-      - test_ps4a.py
+- ***Problem Set 4: wordgame***
+  - *coding.py*
+  - *ps4a.py*
+  - *ps4b.py*
+  - words.txt
+  - test_ps4a.py
 - **9. Classes and Inheritance**
   - Object Oriented Programming
   - Class Instances
@@ -99,3 +99,9 @@
     - *hand.py*
   - generators
     - *generator.py*
+- ***Problem Set 5: Encryption***
+  - *ps6.py*
+  - words.txt
+  - story.txt
+
+  
