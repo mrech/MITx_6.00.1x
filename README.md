@@ -29,7 +29,7 @@
   - KEYWORD: Functions as Objects | Dictionaries | Fibonacci and Dictionaries | Global Variables
   -*CODE: dictionary.py*
 
-- **Problem Set 3: wordgame**
+- ***Problem Set 3: wordgame***
   - *CODE: ps3_hangman.py*
 
 - **7. Testing and debugging**
